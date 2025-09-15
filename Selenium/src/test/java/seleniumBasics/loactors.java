@@ -12,7 +12,7 @@ public class loactors extends Base {
 		driver.findElement(By.name("viewport"));
 		driver.findElement(By.linkText("Simple Form Demo"));
 		driver.findElement(By.partialLinkText("Simple"));
-		driver.findElement(By.cssSelector("button[id='button-one']"));
+		driver.findElement(By.cssSelector("button[id='button-one']"));//tagname[attribute='attribute value']
 		
 		}
 	
