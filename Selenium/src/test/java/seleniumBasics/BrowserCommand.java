@@ -21,7 +21,7 @@ public void VerifyNavigation()
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 BrowserCommand browser=new BrowserCommand();
-browser.InitializeBrowser();
+browser.initializeBrowser();
 browser.verifyBrowser();
 browser.VerifyNavigation();
 	}

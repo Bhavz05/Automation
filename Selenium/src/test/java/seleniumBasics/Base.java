@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Base {
 public WebDriver driver;
-public void InitializeBrowser()
+public void initializeBrowser()
 {
 	driver=new ChromeDriver();
 	driver.get("https://selenium.qabible.in/");
@@ -19,7 +19,7 @@ public void driverClose()
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Base base=new Base();
-		base.InitializeBrowser();
+		base.initializeBrowser();
 		base.driverClose();
 
 	}
