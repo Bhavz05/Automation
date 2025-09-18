@@ -7,11 +7,18 @@ public class WebElementCommand extends Base {
 public void verifyCommand()
 {
 	driver.navigate().to("https://selenium.qabible.in/simple-form-demo.php");
-	WebElement messagebox=driver.findElement(By.xpath("//input[@id='single-input-field']"));
-	messagebox.sendKeys("Bhavana");
+	WebElement messageBox= driver.findElement(By.xpath("//input [@id='single-input-field']"));
+	messageBox.sendKeys("Hai");
+	WebElement showMessagebtn=driver.findElement(By.xpath("//button [@id='button-one']"));
+	showMessagebtn.click();
+	WebElement yourMsgTxt=driver.findElement(By.xpath("//div [@id='message-one']"));
+	System.out.println(yourMsgTxt.getText());
+	System.out.println(showMessagebtn.getTagName());
+	System.out.println(showMessagebtn.getCssValue("color"));
+	//messageBox.clear();
 }
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		WebElementCommand command= new WebElementCommand();
 		command.initializeBrowser();
 		command.verifyCommand();
