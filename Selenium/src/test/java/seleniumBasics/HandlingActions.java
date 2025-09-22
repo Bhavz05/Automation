@@ -46,6 +46,9 @@ public void verifyKeyBoardAction() throws AWTException {
 		// TODO Auto-generated method stub
 		HandlingActions handlingActions = new HandlingActions();
 		handlingActions.initializeBrowser();
+		//handlingActions.verifyRightClick();
+				//handlingActions.verifyMouseOver();
+				//handlingActions.verifyDragAndDrop();
 		try {
 			handlingActions.verifyKeyBoardAction();
 		} catch (AWTException e) {
