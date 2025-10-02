@@ -16,15 +16,15 @@ public LoginPage(WebDriver driver)
 @FindBy(id="password")WebElement password;
 @FindBy(id="login-button")WebElement login;
 
-public void EnterUsernameOnUsername()
+public void enterUsernameOnUsername(String userNameValue)
 {
-	username.sendKeys("standard_user");
+	username.sendKeys(userNameValue);
 }
-public void EnterPasswordOnPassword()
+public void enterPasswordOnPassword(String PasswordValue)
 {
-	username.sendKeys("secret_sauce");
+	password.sendKeys(PasswordValue);
 }
-public void EnterLoginButtonCLick()
+public void enterLoginButtonCLick()
 {
 	login.click();
 }
